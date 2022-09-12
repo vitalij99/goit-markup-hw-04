@@ -9,7 +9,8 @@
     --active-bg-color: #2196F3;
     --active-butt-bg: #188CE8;
     --footer-color-a: rgba(255, 255, 255, 0.6);
-
+    --bg-hero: rgba(47, 48, 58, 0.4);
+    --icon: #AFB1B8;
 }
 
 
@@ -51,6 +52,11 @@ img {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+button {
+    font: inherit;
+    cursor: pointer;
+}
+
 /* header */
 header {
     font-weight: 500;
@@ -100,11 +106,11 @@ nav {
 .activ:focus,
 .open {
     color:  var(--active-bg-color)
+    
 }
 
-button {
-    font: inherit;
-    cursor: pointer;
+.activ:hover .icon-mail {
+    fill: #188CE8;
 }
 .contact {
     display: flex;
@@ -112,16 +118,30 @@ button {
     align-items: center;
     gap: 50px;
 }
-
+.contact .item {
+    display: flex;
+}
+.contact .icon-mail {
+    margin-right: 10px;
+}
 .mail {
+    display: flex;
+    align-items: center;
     color: var(--primary-color-text);
+    fill: currentColor;
 }
 
 /* hero */
 .hero {
+    margin: 0 auto;
+    max-width: 1600px;
     background-color: var(--hero-foot-bg);
     padding: 200px 15px;
     text-align: center;
+    background-image: linear-gradient( var(--bg-hero), var(--bg-hero)), url(../images/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
 
 .hero-title {
@@ -177,6 +197,7 @@ button {
     text-transform: uppercase;
 }
 
+
 .feature-page {
     margin: 0;
     font-size: 14px;
@@ -200,7 +221,16 @@ button {
     gap: 30px;
 }
 
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background-color: var(--team-butt-bg);
 
+    margin-bottom: 30px;
+}
 
 /* team */
 .sec-team {
@@ -234,9 +264,32 @@ button {
 }
 
 .team-text {
-    padding: 30px 0;
+    padding-top: 30px;
+    padding-bottom: 16px;
 }
-
+.social {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+.social-icon-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    fill: var(--icon);
+}
+.social-icon-bg:hover {
+    background-color: var(--active-bg-color);
+    fill: var(--white-color);
+}
+.social-icon {
+    
+}
 /* footer */
 footer {
     background-color: var(--hero-foot-bg);
