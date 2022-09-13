@@ -11,6 +11,8 @@
     --footer-color-a: rgba(255, 255, 255, 0.6);
     --bg-hero: rgba(47, 48, 58, 0.4);
     --icon: #AFB1B8;
+    --border-clients: rgba(175, 177, 184, 1);
+    --footer-icon: rgba(255, 255, 255, 0.1);
 }
 
 
@@ -287,9 +289,33 @@ nav {
     background-color: var(--active-bg-color);
     fill: var(--white-color);
 }
-.social-icon {
-    
+/* client */
+.clients {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
 }
+.client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+
+    border: 1px solid var(--border-clients);
+    border-radius: 4px;
+
+}
+.client {
+    fill: var(--icon);
+}
+.client:hover   {
+    border-color: var(--active-bg-color);
+    fill: var(--active-bg-color);
+}
+
+
 /* footer */
 footer {
     background-color: var(--hero-foot-bg);
@@ -323,7 +349,35 @@ footer .logo {
 footer .mail {
     color: var(--footer-color-a);
 }
+/* footer warps */
+.footer-warp {
+    display: flex;
+}
+.left-warp {
+    width: 230px;
+}
 
+.right-warp {
+    width: 230px;
+    margin-left: 70px;
+    margin-top: 12px;
+}
+.footer-title {
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+.footer-social {
+    display: flex;
+    gap: 10px;
+}
+.footer-icon {
+    background-color: var(--footer-icon);
+    fill: var(--white-color);
+}
 /* portfolio */
 .filters {
     margin-bottom: 50px;
