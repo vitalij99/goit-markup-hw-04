@@ -265,13 +265,14 @@ nav {
 }
 
 .team-text {
-    padding-top: 30px;
-    padding-bottom: 16px;
+    padding: 30px 0;
+}
+.team-page {
+    margin-bottom: 16px;
 }
 .social {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
     gap: 10px;
 }
 .social-icon-bg {
@@ -297,10 +298,7 @@ nav {
 }
 .client {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 92px;
+    padding: 15px 32px;
 
     border: 1px solid var(--border-clients);
     border-radius: 4px;
@@ -351,16 +349,14 @@ footer .mail {
 /* footer warps */
 .footer-warp {
     display: flex;
+    align-items: baseline;
+    gap: 93px;
 }
 .left-warp {
-    width: 230px;
+    
 }
 
-.right-warp {
-    width: 230px;
-    margin-left: 70px;
-    margin-top: 12px;
-}
+
 .footer-title {
     margin-bottom: 20px;
 
@@ -407,8 +403,12 @@ footer .mail {
     flex-wrap: wrap;
     gap: 30px;
 }
-
-.portfolio-box:hover {
+.portfolio-box {
+    text-decoration: none;
+}
+.portfolio-box:hover,
+.portfolio-box:focus {
+    display: block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio .text {
@@ -426,5 +426,5 @@ footer .mail {
 .portfolio-page {
     font-size: 16px;
     line-height: 1.88;
-    
+    color: var(--primary-color-text);
 }
