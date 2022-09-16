@@ -316,10 +316,9 @@ nav {
 /* footer */
 footer {
     background-color: var(--hero-foot-bg);
+    padding: 60px 0;
 }
-footer .container {
-    padding: 60px 15px;
-}
+
 address {
     font-style: normal;
     margin-top: 20px;
@@ -358,6 +357,7 @@ footer .mail {
 
 
 .footer-title {
+    display: inline-block;
     margin-bottom: 20px;
 
     font-size: 14px;
